@@ -1,0 +1,11 @@
+barcode: Barcode (A barcode creation and printing program by GNU)
+barcode:
+barcode: GNU Barcode is a tool to convert text strings to printed bars. It
+barcode: supports a variety of standard codes (UPC, EAN, ISBN, CODE39) to
+barcode: represent the textual strings and creates postscript output.
+barcode: Accepted are sizes and positions in inches, centimeters and
+barcode: millimeters. It can also create tables of barcodes (to print
+barcode: labels on sticker pages).
+barcode: GNU Barcode is availiable as both library and executable program.
+barcode:
+barcode: Packaged by Georgi D. Sotirov <gdsotirov@dir.bg>
