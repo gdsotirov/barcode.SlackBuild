@@ -19,7 +19,7 @@
 #
 # Visit SlackPack at http://sotirov-bg.net/slackpack/
 #
-# $Id: barcode.SlackBuild,v 1.2 2013/04/20 05:16:53 gsotirov Exp $
+# $Id: barcode.SlackBuild,v 1.3 2013/04/20 05:28:48 gsotirov Exp $
 #
 
 . ../../slack-package.conf 
@@ -74,11 +74,13 @@ bin_perms $PKG
 gzip_info $PKG
 
 mkdir -p $PKG/install
-install -m 644 $CWD/slack-desc $PKG/install/slack-desc
+install -m 644 $CWD/slack-desc     $PKG/install/slack-desc
+install -m 644 $CWD/slack-required $PKG/install/slack-required
 
 mkdir -p $PKG/usr/src/slackbuilds/$NAME-$VERSION
-install -m 644 $CWD/slack-desc       $PKG/usr/src/slackbuilds/$NAME-$VERSION
-install -m 644 $CWD/$NAME.SlackBuild $PKG/usr/src/slackbuilds/$NAME-$VERSION
+install -m 644 $CWD/slack-desc       $PKG/usr/src/slackbuilds/$NAME-$VERSION/slack-desc
+install -m 644 $CWD/slack-required   $PKG/usr/src/slackbuilds/$NAME-$VERSION/slack-required
+install -m 644 $CWD/$NAME.SlackBuild $PKG/usr/src/slackbuilds/$NAME-$VERSION/$NAME.SlackBuild
 
 # Pack
 PKG_DIR=${PKG_DIR:-/tmp}
